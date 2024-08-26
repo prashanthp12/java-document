@@ -1,0 +1,274 @@
+<!-- JAVA SCRIPT -->
+
+<!--ECMA SCRIPT ==> it is strandard for javascript or it's set of rules for javascript , based upon ecma script standsrds browser companies update their own browsers -->
+
+<!-- ECMA ==> european computers manufacturer association -->
+
+<!--  ecma script strating version => es262 -->
+
+<!-- is javascript is client side or server side ? ==> both server and client side, server side we're using node.js -->
+
+<!-- libraries built upon javascript ? ==> angular.js, react.js, vue.js, ember.js, express.js, node.js, next.js  -->
+
+<!-- what is the diefference between library and frame work ? ==> fremework is the collection of libraries, library can able to solve one particular issue only -->
+
+<!--  javscript features ==> open source ==> cross-platform, ==> synchronous  ==>  single threaded  -->
+
+<!-- is javascrit is compiler or interpeter ? interpeter  -->
+
+<!-- compiler ==> it will execute code at a time -->
+
+<!-- interpeter ==> it will execute the code line by line -->
+
+<!-- es6 features ? 
+
+              ==> let , const keywords
+                           
+              ==> template literals denoted by (``)
+
+              ==> spread and rest operator denoted by (...)
+
+              ==> destructuring of array and object
+
+              ==> arrow functions  denoted by (()=>)
+
+              ==> HOF [higher order functions ==> map, reduce, filter, find]
+
+              ==> promises
+
+              ==> prototypes
+
+-->
+
+<!-- statically typed ==> we need to specify data type of a variable eg : char name=" some"  eg : c, java -->
+
+<!-- dynamically typed ==> we don't need to specify data type of a variable eg : var name ="some" eg : javaScript, python -->
+
+<!--  is javscript statically typed or dynamically typed ? javascript is dynamically typed language -->
+
+<!-- what is constructor ? which is used to intilize an object-->
+
+<!-- what are the ways to declare a variable in javaScript ? 
+
+we can declare variable in three ways
+
+==> var, let, const 
+-->
+
+<!-- what is scope ? life time visibility or area of accesibility of an variable  -->
+
+<!-- how many number of scopes are there in javascript  ? global scope & functional scope  but when ever we are using let or const key word it'll create "block scope" to the javascript-->
+
+<!-- hoisting ==> it's javascript interpreter behaviour, it will take all the declarations to the top  -->
+
+<!-- what are the things are hoisted in JavaScript ?  var , function declarations are hoisted in javascript -->
+
+<!-- what's the difference between var ,let and const key words ?
+
+=============================var============================================
+
+by using var , we can re-declare a variable   ==> var a =10; var a =100;
+
+we can re-assign the value   var b =100; b = 1000;
+
+we can able to write multiple lines for initialization and assigning   ==> var c; c= 10000;
+
+var is hoisted allocated memory in global scope
+
+we can able to access var keyword variable before initialization ==> console.log(d); var d =100000;
+
+=============================let============================================
+
+by using let , we can't able to  re-declare a variable 
+
+we can re-assign the value   let b =100; b = 1000;
+
+we can able to write multiple lines for initialization and assigning   ==> let c; c= 10000;
+
+let is hoisted but it will allocate memory in different space [script]
+
+we can't able to access let keyword variable before initialization 
+
+
+=============================const============================================
+
+by using const , we can't able to  re-declare a variable 
+
+we can't able  re-assign the value
+
+we can't able to write multiple lines for initialization and assigning
+
+const is hoisted but it will allocate memory in different space [script]
+
+we can't able to access const keyword variable before initialization 
+
+-->
+
+<!-- temporial dead-zone ?
+ 
+when ever we declaring variables with let or const key words and try to accees before initialization ,
+   we can't able to access before initialization ,
+   after initialization we can able to access the value ,
+   these time period is called as temporial dead zone
+
+-->
+
+<!-- how you can access global scope ? ==>  by using window or this -->
+
+<!-- DOM ? Document object modal -->
+
+<!-- array ? ==> collection of multiple values  ==> let arr = [1,2,"hello", true]  -->
+
+<!-- object ? ==> collection of key, value pairs ==> let obj ={a:100, b:200} -->
+
+<!--  data types in javascript ? 
+javascript doen't have any data types but values have data types
+
+==> primitive data type
+ 
+          ==> string, number, boolean, null, undefined
+
+==> non-primitive data type
+
+          ==> array, object, regular expressions [regex]
+-->
+
+<!-- how you check type of any value in javascript ?
+
+by using typeof() , we cab able to identify the type of the values
+
+==> what is the type of null
+       typeof(null); // object
+       typeof(undefined); // undefined
+       typeof(NaN); // number
+       typeof([]); // object
+-->
+
+<!--  what is block ? gropup of statements -->
+
+<!--  what is function ? logical group of one or more expressions  -->
+
+<!-- what are the possible ways we can able to create a function in javascript ?
+
+  ==> function declaration, function expression , arrow function
+
+==> function declaration syntax : 
+
+                               function functionName(a, b){  // declaration
+                                                     return a + b // returing the value
+                                                           }
+                               functionName(a, b) // invokation it will show the returned value
+
+
+
+==> function expression syntax :
+
+                         let functionName = function(a,b){
+                                                     return a + b
+                                                     }
+                                              functionName()
+
+==> arrow function syntax :
+
+                            let functionName=(a, b)=> a + b
+                            functionName()
+
+
+-->
+
+<!-- difference between function declaration, function expression and arrow function ? IPQ
+
+==> function delarations are hoisted and expression and arrow functions are not hoisted
+
+==> arrow function concise the function syntax, we don't need to write a function keyword ,
+
+     if it's single line of code we don't need to write return also
+
+==> arrow function don't have own this data, it will take the parent this data  [imp]
+
+-->
+
+<!-- what is call stack ? 
+ there's is only one call stack in the browser engine, it will execute the code [LIFO ==> last in first out]
+   -->
+
+<!-- what is event loop ? 
+ it will acts a mediator in between callStack and callback queue,
+  it will keep on checking is callStack is clear or not and if callStack is clear it will give highest priority to the micro tasks,
+   if any micro tasks are vailable in callBack queue ,
+    event loop push the tasks in the call stack if call stacl is empty,
+     if there's no micro tasks then it will go to macro tasks  -->
+
+<!-- what is call back ?
+         callback is function it will execute after the actual function execution
+     -->
+
+<!-- first class function ? 
+      we can able to assaign a function to the variable ,
+       we can pass function as and argument in javascript
+     -->
+
+
+     <!-- what is closure ?
+        ==> function bundle together with it's lexical environment
+        ==> inner function can able to access parent function local variables by itself
+
+        syntax : 
+
+                   function functionName(){  // parent function
+                                           let a =1000; // parent function local variables
+                                                    function (){  // children function
+                                                                console.log(a)  // getting value from parent
+                                                                }() // children invokation
+
+                                           }functionName() // parent invokation
+     
+     -->
+
+<!-- callback-hell issue ? -->
+
+<!-- how you prevent global variable issue ? -->
+
+<!--  array methods ? 
+
+   ==> in javaScript array is 0 based index
+
+   ==> if you want to access array elemnets  ==> arr[index]
+      
+      ==> mutator methods 
+
+                        push      ==> arrName.push     // (element want to add end of the array),
+
+                        pop       ==> arrName.pop()    // it will removes item from end of the array,
+
+                        shift     ==> arrName.shift()  // it will removes item from starting of the array,
+
+                        unshift   ==> arrName.unshift(elemnet want to add starting of the array),
+
+                        slice     ==> arrname.slice(starting index, end index), 
+
+                        splice    ==> arrname.splice(start index, count of delete , items to add) ,
+
+                        fill      ==> arr.fill(fill with  , start index, end index),  
+
+                        delete    ==> delete arrname[index],
+
+                        split     ==> arr.split(""),
+
+                        reverse   ==> arr.revrse(),
+
+                        join      ==> arr.join(""),
+
+                        replace   ==> arr.replace( replaced val, new val,),
+
+                        concat    ==> let arr =[1,2,3]; let arr1=[4,5,6]; let arr2 = arr.concat(arr1);
+
+                        sort      ==> arr.sort() 
+
+                        trim      ==> it will remove spaces from starting and ending of the string ==> str.trim()
+
+      ==> iterator methods
+
+                        ==> map, reduce, filter, find
+
+      -->
