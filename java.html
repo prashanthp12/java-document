@@ -23,6 +23,751 @@
 <!-- es6 features ? 
 
               ==> let , const keywords
+<!-- JAVA SCRIPT -->
+
+<!--ECMA SCRIPT ==> it is strandard for javascript or it's set of rules for javascript , based upon ecma script standsrds browser companies update their own browsers -->
+
+<!-- ECMA ==> european computers manufacturer association -->
+
+<!--  ecma script strating version => es262 -->
+
+<!-- is javascript is client side or server side ? ==> both server and client side, server side we're using node.js -->
+
+<!-- libraries built upon javascript ? ==> angular.js, react.js, vue.js, ember.js, express.js, node.js, next.js  -->
+
+<!-- what is the diefference between library and frame work ? ==> fremework is the collection of libraries, library can able to solve one particular issue only -->
+
+<!--  javscript features ==> open source ==> cross-platform, ==> synchronous  ==>  single threaded  -->
+
+<!-- is javascrit is compiler or interpeter ? interpeter  -->
+
+<!-- compiler ==> it will execute code at a time -->
+
+<!-- interpeter ==> it will execute the code line by line -->
+
+<!-- es6 features ? 
+
+              ==> let , const keywords
+                           
+              ==> template literals denoted by (``)
+
+              ==> spread and rest operator denoted by (...)
+
+               ==> Default parameters
+
+              ==> destructuring of array and object
+
+              ==> arrow functions  denoted by (()=>)
+
+              ==> HOF [higher order functions ==> map, reduce, filter, find]
+
+              ==> promises
+
+              ==> prototypes
+
+-->
+
+<!-- statically typed ==> we need to specify data type of a variable eg : char name=" some"  eg : c, java -->
+
+<!-- dynamically typed ==> we don't need to specify data type of a variable eg : var name ="some" eg : javaScript, python -->
+
+<!--  is javscript statically typed or dynamically typed ? javascript is dynamically typed language -->
+
+<!-- what is constructor ? which is used to intilize an object-->
+
+<!-- what are the ways to declare a variable in javaScript ? 
+
+we can declare variable in three ways
+
+==> var, let, const 
+-->
+
+<!-- what is scope ? life time visibility or area of accesibility of an variable  -->
+
+<!-- how many number of scopes are there in javascript  ? global scope & functional scope  but when ever we are using let or const key word it'll create "block scope" to the javascript-->
+
+<!-- hoisting ==> it's javascript interpreter behaviour, it will take all the declarations to the top  -->
+
+<!-- what are the things are hoisted in JavaScript ?  var , function declarations are hoisted in javascript -->
+
+<!-- what's the difference between var ,let and const key words ?
+
+=============================var============================================
+
+by using var , we can re-declare a variable   ==> var a =10; var a =100;
+
+we can re-assign the value   var b =100; b = 1000;
+
+we can able to write multiple lines for initialization and assigning   ==> var c; c= 10000;
+
+var is hoisted allocated memory in global scope
+
+we can able to access var keyword variable before initialization ==> console.log(d); var d =100000;
+
+=============================let============================================
+
+by using let , we can't able to  re-declare a variable 
+
+we can re-assign the value   let b =100; b = 1000;
+
+we can able to write multiple lines for initialization and assigning   ==> let c; c= 10000;
+
+let is hoisted but it will allocate memory in different space [script]
+
+we can't able to access let keyword variable before initialization 
+
+
+=============================const============================================
+
+by using const , we can't able to  re-declare a variable 
+
+we can't able  re-assign the value
+
+we can't able to write multiple lines for initialization and assigning
+
+const is hoisted but it will allocate memory in different space [script]
+
+we can't able to access const keyword variable before initialization 
+
+-->
+
+<!-- temporial dead-zone ?
+ 
+when ever we declaring variables with let or const key words and try to accees before initialization ,
+   we can't able to access before initialization ,
+   after initialization we can able to access the value ,
+   these time period is called as temporial dead zone
+
+-->
+
+<!-- how you can access global scope ? ==>  by using window or this -->
+
+<!-- DOM ? Document object modal -->
+
+<!-- array ? ==> collection of multiple values  ==> let arr = [1,2,"hello", true]  -->
+
+<!-- object ? ==> collection of key, value pairs ==> let obj ={a:100, b:200} -->
+
+<!--  data types in javascript ? 
+javascript doen't have any data types but values have data types
+
+==> primitive data type
+ 
+          ==> string, number, boolean, null, undefined
+
+==> non-primitive data type
+
+          ==> array, object, regular expressions [regex]
+-->
+
+<!-- how you check type of any value in javascript ?
+
+by using typeof() , we cab able to identify the type of the values
+
+==> what is the type of null
+       typeof(null); // object
+       typeof(undefined); // undefined
+       typeof(NaN); // number
+       typeof([]); // object
+-->
+
+<!--  what is block ? gropup of statements -->
+
+<!--  what is function ? logical group of one or more expressions  -->
+
+<!-- what are the possible ways we can able to create a function in javascript ?
+
+  ==> function declaration, function expression , arrow function
+
+==> function declaration syntax : 
+
+                               function functionName(a, b){  // declaration
+                                                     return a + b // returing the value
+                                                           }
+                               functionName(a, b) // invokation it will show the returned value
+
+
+
+==> function expression syntax :
+
+                         let functionName = function(a,b){
+                                                     return a + b
+                                                     }
+                                              functionName()
+
+==> arrow function syntax :
+
+                            let functionName=(a, b)=> a + b
+                            functionName()
+
+
+-->
+
+<!-- difference between function declaration, function expression and arrow function ? IPQ
+
+==> function delarations are hoisted and expression and arrow functions are not hoisted
+
+==> arrow function concise the function syntax, we don't need to write a function keyword ,
+
+     if it's single line of code we don't need to write return also
+
+==> arrow function don't have own this data, it will take the parent this data  [imp]
+
+-->
+
+<!-- what is call stack ? 
+ there's is only one call stack in the browser engine, it will execute the code [LIFO ==> last in first out]
+   -->
+
+<!-- what is event loop ? 
+ it will acts a mediator in between callStack and callback queue,
+  it will keep on checking is callStack is clear or not and if callStack is clear it will give highest priority to the micro tasks,
+   if any micro tasks are vailable in callBack queue ,
+    event loop push the tasks in the call stack if call stacl is empty,
+     if there's no micro tasks then it will go to macro tasks  -->
+
+<!-- what is call back ?
+         callback is function it will execute after the actual function execution
+     -->
+
+<!-- first class function ? 
+      we can able to assaign a function to the variable ,
+       we can pass function as and argument in javascript
+     -->
+
+
+     <!-- what is closure ?
+        ==> function bundle together with it's lexical environment
+        ==> inner function can able to access parent function local variables by itself
+
+        syntax : 
+
+                   function functionName(){  // parent function
+                                           let a =1000; // parent function local variables
+                                                    function (){  // children function
+                                                                console.log(a)  // getting value from parent
+                                                                }() // children invokation
+
+                                           }functionName() // parent invokation
+     
+     -->
+
+<!-- ........................... MATH OBJECT.................................................-->
+
+   ==> Math.min()  ==> it will gives minimum value in array
+
+   ==> Math.max()  ==> it will gives maximum value in array
+
+   ==> Math.ceil()  ==> it always give top value . eg: Math.ceil(2.3); //3
+
+   ==> Math.floor()  ==> it always give ground value. eg: Math.floor(2.9); //2
+
+   ==> Math.random() ==> it always give value in between 0 to 1
+
+
+<!-- ...............................................LOOPS................................................. -->
+    <!-- loops in javascript 
+     
+    Loop ==> it will execute block of code repeatedly
+
+    type of loops in javascript 
+
+     ==> for Syntax
+       
+     for(initialization; condition; increment / decrement expression){
+     
+     }
+
+     
+     ==> while  syntax
+
+     initailization;
+
+     while(condition){
+     increment/decrement expression
+     }
+     
+     ==> do while syntax 
+
+initialization;
+
+do{
+increment or decrement expression
+}while(condition;)
+
+ ==> for of syntax  (it will gives only values)
+   
+ for(initialization of given array/object){
+ }
+ 
+ 
+ ==> for in   (it will gives only indexes)
+
+ for(initialization in given array/object){
+ }
+    
+    -->
+
+<!--....................................................ARRAYS.......................................................,  -->
+
+   Array: collection of multiple value ; 
+         eg: let arr = ["haran",23,true];
+
+        ==> type of an array is an object
+
+        ==> array is 0 based index in javascript
+
+        ==> to check the length we are using arrName.length()
+
+        ==> to access value inside an array ==> arr[index]
+
+     // ways to create an array in javascript
+
+// 1st way
+
+let arr =[1,2,3,4]
+
+console.log("arr :", arr)
+
+
+// 2nd way
+
+let arr2= new Array(5,6,7,8)
+
+console.log("arr2 :", arr2)
+
+// 3rd way
+
+let arr3 = Array.of(9,10,11,21)
+
+console.log("arr3 :", arr3)
+
+
+<!--.................................................... STRING TO ARRAY CONVERSIONS..................................  -->
+
+// ways to convert string into array
+let str="helloo world"
+// 1st way
+
+let arr=str.split("");
+console.log("arr :",arr)
+
+let arr1=str.split(" ");
+console.log("arr1 :",arr1)
+
+// 2nd way
+
+let arr2 = [...str]
+console.log("arr2 :",arr2)
+
+//3rd way
+
+let arr3 = Object.assign([], str);
+console.log("arr3 :",arr3)
+
+// 4th way
+
+let arr4=[]
+
+for(let i of str ){
+    arr4.push(i)
+}
+console.log("arr4 :", arr4)
+
+// 5th way
+
+let arr5= Array.from(str);
+console.log("arr5 :", arr5)
+
+// 6th way 
+
+let arr6= Array.prototype.slice.call(str)
+console.log("arr6 :",arr6)
+
+<!-- ...................................................ARRAY MUTATOR METHODS............................................. -->
+<!--  array methods ? 
+
+   ==> in javaScript array is 0 based index
+
+   ==> if you want to access array elemnets  ==> arr[index]
+      
+      ==> mutator methods 
+
+                        push      ==> arrName.push     // (element want to add end of the array),
+
+                        pop       ==> arrName.pop()    // it will removes item from end of the array,
+
+                        shift     ==> arrName.shift()  // it will removes item from starting of the array,
+
+                        unshift   ==> arrName.unshift(elemnet want to add starting of the array),
+
+                        slice     ==> arrname.slice(starting index, end index), 
+
+                        splice    ==> arrname.splice(start index, count of delete , items to add) ,
+
+                        fill      ==> arr.fill(fill with  , start index, end index),  
+
+                        delete    ==> delete arrname[index],
+
+                        split     ==> arr.split(""),
+
+                        reverse   ==> arr.revrse(),
+
+                        join      ==> arr.join(""),
+
+                        replace   ==> arr.replace( replaced val, new val,),
+
+                        concat    ==> let arr =[1,2,3]; let arr1=[4,5,6]; let arr2 = arr.concat(arr1);
+
+                        sort      ==> arr.sort() 
+
+                        trim      ==> it will remove spaces from starting and ending of the string ==> str.trim()
+                        
+                        Array.isArray ==> it will checks the element is array or not
+
+....................................................... ARRAY ITERATOR METHODS .................................. -->
+      <!-- ==> iterator methods
+
+                        ==> map, reduce, filter, find, some, every,includes, indexOf, lastIndexOf
+
+       -->
+
+
+
+<!-- ................................................COPIES DIFFERENCES....................................... -->
+
+      <!-- 
+      Shallow copy => it will take the reference and don't detach from the base one, if you are changing anything inside the new one it will effect on base one as well
+
+      eg :
+       let a =[1,2,3,4]
+           let b = a;
+           b.push(6);
+           console.log(b);//[1,2,3,4,6]
+           console.log(a);//[1,2,3,4,6]
+
+      Deep Copy :  it will take the reference and  detach from the base one, if you are changing anything inside the new one it won't effect on base one 
+
+            eg :
+       let a =[1,2,3,4]
+           let b = [...a]; // one way
+           let b = Object.assign([],a); // one way
+           let b = JSON.parse(JSON.stringify(a)); // one way
+           b.push(6);
+           console.log(b);//[1,2,3,4,6]
+           console.log(a);//[1,2,3,4,]
+      
+      -->
+<!-- .........................................  BACKTICKS ()``)................................................................ -->
+      <!-- Template Literals:
+
+         ==> it is denoted by (``); backticks
+       
+          ==> we can able to write multiple line of paragrahs
+
+          ==> it will allows us to write javascript expressions
+
+      -->
+
+<!-- ....................................................SPREAD & REST ........................................... -->
+      <!--  spread and rest operator 
+        
+      ==> it is denoted by  (...) 
+
+      ==> spread method it will expands the array
+
+      ==> rest method will take rest of the values
+      -->
+
+<!-- .................................................DESTRUCTURING..................................... -->
+
+      <!-- destructuring
+      
+         ==> unpack values from arrays and properties from objects is called as destructuring
+         
+         ==> array destructuring ==> let [a,b,c] = [1,2,3]
+
+
+      -->
+
+<!-- .............................................OBJECTS.............................................. -->
+
+   Object ==> collection of key value pairs, both key and values are separated by colon and key value pairs are separated by comma,
+      
+
+   let obj ={
+      name:"sanju",
+      age:23,
+      isStudent:false
+   }
+
+<!--...................................................ARRAY TO OBJECT CONVERSION...........................  -->
+
+// ways to convert array into an object
+let arr=["a","b","c","d"]
+
+// 1st way
+
+let obj1={...arr}
+console.log("obj1 :",obj1)
+
+// 2nd way
+
+let obj2=Object.assign({}, arr);
+console.log("obj2 :", obj2)
+
+// 3rd way
+let obj3 = arr.reduce((acc, curr, index)=>{
+   acc[index]=curr
+   return acc
+},{})
+console.log("obj3 :", obj3);
+
+// 4th way
+
+let obj4={}
+
+for(let element of arr){
+    if(obj4[element]){
+        obj4[element]++
+    }else{
+        obj4[element]=1
+    }
+}
+
+console.log("obj4 :", obj4)
+
+// 5th way
+
+let arr1=[["name","some one"],["age", 23]]
+
+let obj5= Object.fromEntries(arr1)
+console.log("obj5 :", obj5)
+
+
+// 6th way
+
+
+let obj6={}
+
+arr.forEach((item, index, self)=>{
+    return obj6[self[index]] = item
+})
+
+console.log("obj6 :", obj6)
+
+<!-- ...................................................OBJECTS METHODS ..................................... -->
+
+   ==>  Object.keys()  ==> it will gives all the available keys in the object in array format
+
+     example:   let obj ={name:"some",age :23};
+                               console.log(Object.keys(obj)); //["name", "age"]
+
+   ==>  Object.values() ==> it will gives all the available values in the object in the array format
+
+     example:   let obj ={name:"some",age :23};
+     console.log(Object.values(obj)); //["some", 23]
+
+   ==> Object.entries()  ==> it will gives all the avialble keys and values in the same in array format  
+
+   example:   let obj ={name:"some",age :23};
+   console.log(Object.entries(obj)); //[["name", "some"], ["age", 23]]
+
+   ==> Object.freeze() ==> it will freeze the object, in that object we can't able to add or modify the properties
+    
+   example:   let obj ={name:"some",age :23};
+
+   Object.freeze(obj);
+   
+   obj.name="some one";
+
+   obj.email="some@gmail.com";
+
+   console.log(obj); //{name:"some",age :23};
+
+   ==> Object.seal() ==> by using seal, we can modify the properties available in the object but we can't able to add new properties(key value pairs);
+
+   example:   let obj ={name:"some",age :23};
+
+   Object.seal(obj);
+   
+   obj.name="some one";
+
+   obj.email="some@gmail.com";
+
+   console.log(obj); //{name:"some one",age :23};
+
+<!-- ............................................IIFE.......................................... -->
+
+
+ <!-- IIFE  -->  immediate invoke function expression , it will execute immediately, it will prevents global variable issue
+
+            
+    (function(){
+      console.log("immediate")
+   })()
+
+<!--...........................................CALL , APPLY, BIND METHODS.................................  -->
+
+// call , apply and bind methods
+
+// call and apply both are immediate invoke functions , the difference between both call and apply are the way we pass arguments
+
+// bind is similar to call method but it's not immediate invoke function , we need to invoke the function
+
+let company1={
+    campus:"SEZ-UNIT",
+    company:"Infosys"
+}
+let company2={
+    campus:"Mind-space",
+    company:"TCS",
+}
+
+let companyName=function(location, block){
+    console.log(this.campus +" ," + this.company +", " + location + " , " + block)
+}
+companyName.call(company1,"Hyderabad",9 )
+companyName.apply(company2,["Hyderabad",12])
+
+let BindData=companyName.bind(company1,"Hyderabad",9 )
+
+BindData()
+
+
+<!--............................................ASYNCHRONOUS FUNCTIONS.................................... -->
+
+     setTimeout ==> it will execute only once after delay time
+
+           syntax : setTimeout(callback, delaytiem)
+
+                   setTimeout(()=>{
+
+                   }, 100)
+
+      setInterval ==> it will execute repeatedly after delay time
+
+             syntax : setInterval(callback, delaytiem)
+
+                   setInterval(()=>{
+
+                   }, 100)
+
+<!-- ..........................................DEBOUNCING............................................... -->
+
+   Debouncing ==> it's a technique to improve application performance, it will hold the request for some time , then it'll execute the request,
+    it'll avoid multiple request for the same requirement, we are using setTimeout for debouncing, it'll execute only single time after delay time
+
+
+    syntax:  
+
+    setTimeout(()=>{
+       //request
+    }, 1000)
+
+
+<!-- .........................................THROTTLING.............................................. -->
+
+    Throttling ==> it's a technique to improve application performance, it will make a request repeatedlyafter delay time to get the latest information,
+    we are using setInterval for throttling
+
+    syntax:  
+
+    setInterval(()=>{
+       //request
+    }, 1000)
+
+
+
+    <!-- ..............................................RECURSIVE FUNCTION.................................... -->
+
+
+
+      recursive function :   function call by itself is called as recursive function
+
+<!-- ....................................................CURRYING........................................ -->
+     
+   Currying: it's a new technique to write a function with multiple aruguments converted into sequence of functions is simply called as Currying;
+
+      example: 
+           
+           older way:
+
+               function sum(a,b,c){
+                  return a+b+c
+               }
+               sum(1,2,3)
+
+           currying way : 
+
+           function sum (a){
+            return (b)=>{
+               return (c)=>{
+                  return a + b + c
+               }
+            }
+           }
+sum(1)(2)(3)
+
+<!-- ................................................. -->
+
+<!-- callback-hell issue ? --> // need to cover
+
+<!-- how you prevent global variable issue ? --> // need to cover
+<!-- ........................................................................................... -->
+ 
+<!--  generators --> // need to cover
+
+<!-- time complexity -->  // need to cover
+
+<!-- OOPS  ==> class, object, encapsulation, abstraction, inheritence, message passing  -->
+      
+// ways to convert arr to object 
+
+// call apply and bind
+
+// functions 
+
+// debouncing  & throttling & browser throttling
+
+// dom manipulation (event listners)
+
+// event bubling,event capturing , event delegation
+
+// hofs 
+
+// promises  && async await
+
+// generators
+
+// oops concepts
+
+
+// DSA
+......................................................GARBAGE COLLECTOR........................ -->
+
+
+
+
+
+
+
+
+<!--...........................................INTERVIEW POQ ...................................................  -->
+
+let obj ={
+    name:"some",
+    age:23,
+    person:"male"
+}
+// person to gender (we are changing key here)
+
+
+let {name,age,person:gender} = obj;
+console.log(name);//"some"
+console.log(age);//23
+console.log(gender);//"male"
+
                            
               ==> template literals denoted by (``)
 
